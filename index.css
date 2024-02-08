@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* header,
+article,
+aside,
+footer {
+    border: 1px solid black;
+} */
+
+
+header {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.logo {
+    height: 100%;
+    width: fit-content;
+    padding: 5px;
+    background: green;
+}
+
+.menu {
+    width: fit-content;
+    height: 100%;
+    background: black;
+}
+
+.up-menu {
+    background: green;
+}
+
+.down-menu {
+    background: red;
+}
+
+
+
+
+
