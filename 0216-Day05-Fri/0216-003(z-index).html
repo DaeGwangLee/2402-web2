@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box1 {
+            width: 25%;
+            aspect-ratio: 1;
+            background: pink;
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            z-index: 9999;
+        }
+
+        .box2 {
+            width: 25%;
+            aspect-ratio: 1;
+            background: cadetblue;
+            position: absolute;
+            left: 200px;
+            top: 200px;
+        }
+
+        .box3 {
+            width: 25%;
+            aspect-ratio: 1;
+            background: yellow;
+            position: absolute;
+            left: 300px;
+            top: 300px;
+            z-index: 50;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="box1">1번 박스</div>
+    <div class="box2">2번 박스</div>
+    <div class="box3">3번 박스</div>
+
+    <!-- 
+        z-index는 포지션의 부수 속성임.
+        z-index는 반드시 포시션이 선행되어야 함. 
+        static 상태인 컨텐츠에는 속성적용이 안 됨.
+    -->
+    
+</body>
+</html>

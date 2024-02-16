@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sticky</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        section {
+            height: 2000px;
+            position: relative;
+        }
+
+        #first {
+
+        }
+
+        #second {
+            background: pink;
+        }
+
+        #third {
+
+        }
+
+        .sticky-box {
+            width: 100px;
+            height: 100px;
+            background: cadetblue;
+            position: sticky;
+            top: 0px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <section id="first">section 1
+        
+    </section>
+    <section id="second">section 2
+        <div class="sticky-box">sticky</div>
+    </section>
+    <section id="third">section 3
+
+    </section>    
+</body>
+</html>
