@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+
+        .move {
+            width: 100px;
+            height: 100px;
+            background: pink;
+            position: absolute;
+            top: 100px;
+            animation: 2s 오른쪽으로이동 infinite;
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            /* name: 우리가 정한 키프레임의 이름 */
+            /* duration: 애니메이션 총 재생시간 */
+            /* timing-function: 가속도 */
+            /* iteration-count: 반복횟수, 특정 값(숫자)이나 무한반복(infinite) 설정 가능. iteration: 반복. */
+            
+            /* direction: 정방향, 역방향 및 정->역, 역->정 재생 설정가능; */
+            /* fill-mode: 재생시간 밖의 위치를 결정한다. both, forward등을 설정할 수 있음. */
+            
+
+
+
+        }
+
+        @keyframes 오른쪽으로이동 {
+            from{
+                left: 100px;
+            }
+            to{
+                left: 300px;
+            }
+        }
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="move"></div>
+
+    </div>
+
+</body>
+</html>
