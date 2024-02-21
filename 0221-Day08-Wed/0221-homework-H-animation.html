@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 500px;
+            height: 500px;
+            background: gray;
+            position: relative;
+        }
+
+        .animation-container {
+            width: 200px;
+            height: 250px;
+            transform: translate(-50%,-50%);
+            top: 50%;
+            left: 50%;            
+            position: absolute;  
+            /* border: 1px solid black; */
+        }
+
+        .animation-container > div {
+            background: red;
+        }
+
+        .left-column-bar {
+            width: 50px;
+            height: 250px;
+            position: fixed;
+            top: 0%;
+            left: 0%;
+            animation: 3s left-column-bar infinite;            
+        }            
+
+        .center-row-bar {
+            width: 100px;
+            height: 50px;            
+            position: fixed;            
+            top: 100px;
+            left: 50px;
+            animation: 3s center-row-bar infinite;
+        }            
+
+        .right-column-bar {
+            width: 50px;
+            height: 250px;
+            position: fixed;
+            top: 0%;
+            right: 0%;
+            animation: 3s right-column-bar infinite;
+        }
+
+        @keyframes left-column-bar {0%{height: 0;} 16%{height: 250px;} 32%{height: 250px;} 48%{height: 250px;} 64%{height: 250px;} 80%{height: 250px;} 94%{height: 0;} 100%{height: 0;}}            
+        @keyframes center-row-bar  {0%{width:  0;} 16%{width:  0;}     32%{width:  100px;} 48%{width:  100px;} 64%{width:  100px;} 80%{width:  0;}     94%{width:  0;} 100%{width:  0;}}    
+        @keyframes right-column-bar{0%{height: 0;} 16%{height: 0;}     32%{height: 0;}     48%{height: 250px;} 64%{height: 0;}     80%{height: 0;}     94%{height: 0;} 100%{height: 0;}}
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="animation-container">
+            
+            <div class="left-column-bar"></div>
+            <div class="center-row-bar"></div>
+            <div class="right-column-bar"></div>
+            
+        </div>
+    </div>
+    
+</body>
+</html>
