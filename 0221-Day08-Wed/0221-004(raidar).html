@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            background: gray;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .animaition-container { 
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            transform: translate(-50%,-50%);
+        }
+
+        .raidar {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: white;
+
+            animation: find 2s infinite;
+
+            opacity: 1;
+            transform: scale(0);
+            position: absolute;
+        }
+
+        .raidar:nth-child(2) {
+            animation-delay: 0.2s;
+        }
+
+        .raidar:nth-child(3) {
+            animation-delay: 0.4s;
+        }
+
+        @keyframes find {
+            from {
+                opacity: 1;
+                transform: scale(0);                
+            }
+
+            to {
+                opacity: 0;
+                transform: scale(1);
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="animation-container">
+            <div class="raidar"></div>
+            <div class="raidar"></div>
+            <div class="raidar"></div>
+        </div>
+
+    </div>
+
+    <!-- <div class="grid-box">
+
+        
+    </div> -->
+    
+</body>
+</html>
