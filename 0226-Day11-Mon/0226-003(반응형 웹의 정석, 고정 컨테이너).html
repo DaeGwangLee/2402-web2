@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        section {
+            background: pink;
+            padding: 0 32px;
+            /* 테블릿 좌우여백: 32px */
+        }
+
+        section.full-screen-section {
+            padding: 0;
+        }
+
+        .full-screen-section > .section-container {
+            max-width: none;
+        }
+
+        .section-container {
+            max-width: 1280px;
+            /* width: 100%(기본값); */
+            margin: 0 auto;
+            background: orange;
+            
+            height: 500px; /* 임시높이 */
+        }
+
+        @media screen and (max-width: 799px) {
+            section {
+                padding: 0 16px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+
+    </header>
+    <section class="full-screen-section">
+        <div class="section-container">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nobis, nisi soluta, eos aut temporibus distinctio illo perspiciatis quisquam impedit, quasi laboriosam quidem quaerat officiis similique? Quibusdam reiciendis itaque libero?
+        </div>
+    </section>
+    <section>
+        <div class="section-container">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nobis, nisi soluta, eos aut temporibus distinctio illo perspiciatis quisquam impedit, quasi laboriosam quidem quaerat officiis similique? Quibusdam reiciendis itaque libero?
+        </div>
+    </section>
+    <footer>
+
+    </footer>
+    
+</body>
+</html>
