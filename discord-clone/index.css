@@ -1,0 +1,84 @@
+:root {
+    --main-color: #5865f2;
+}
+
+/* header start -------------------------------------------------------------------------------------------------------------------------------------- */
+
+header {
+    padding: 0 48px;
+    height: 64px;
+}
+
+.header-container {
+    max-width: 1160px;
+    height: 100%;
+    /* 
+        헤더-컨테이너에 세로값 바로 주면 안됨? 
+        위에서부터 내려오거나 아래에서부터 올라오거나 둘 중의 하나, 
+        나중에 헷갈릴 수 있음. 
+    */
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-container nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.header-container ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.header-container a {
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: bold;
+}
+
+.header-container a:hover {
+    text-decoration: underline;
+}
+
+.lang-select {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.lang-select:after {
+    content: "";
+    display: block;
+    width: 4px;
+    height: 4px;
+    border: 1px solid var(--main-color);
+    transform: rotate(45deg);
+    border-top: none;
+    border-left: none;
+}
+
+.hamberger-button {
+    background: transparent;
+    border: none;
+    display: none;
+}
+
+@media screen and (max-width: 799px) {
+
+    .hamberger-button {
+        display: block;        
+    }
+
+    .header-container ul {
+        display: none;
+    }
+}
+
+/* header end -------------------------------------------------------------------------------------------------------------------------------------- */
