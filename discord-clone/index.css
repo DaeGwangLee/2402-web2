@@ -2,6 +2,15 @@
     --main-color: #5865f2;
 }
 
+img {
+    display: block;
+    width: 100%;
+}
+
+button {
+    cursor: pointer;
+}
+
 /* header start -------------------------------------------------------------------------------------------------------------------------------------- */
 
 header {
@@ -70,19 +79,8 @@ header {
     display: none;
 }
 
-
-
 /* header end -------------------------------------------------------------------------------------------------------------------------------------- */
 /* main start -------------------------------------------------------------------------------------------------------------------------------------- */
-
-
-
-
-
-
-
-
-
 
 /* main {
     background: url(img/main-background.png);
@@ -147,7 +145,6 @@ h3, p {
 .help-contents-wrapper {
     max-width: 700px;
     height: 100%;
-
 }
 
 .help-contents-wrapper {
@@ -179,7 +176,6 @@ h3, p {
     height: 1px;
     background: #cccccc;
     border: 1px solid #cccccc;
-
 }
 
 .content-explane {
@@ -195,12 +191,7 @@ h3, p {
 
 h3, p {
     text-decoration: none;
-
 } */
-
-
-
-
 
 /* main end -------------------------------------------------------------------------------------------------------------------------------------- */
 /* section-first start -------------------------------------------------------------------------------------------------------------------------------------- */
@@ -244,6 +235,7 @@ section {
 
 .help-content-img {
     width: 106px;
+    margin: 0 auto;
 }
 
 .help-content > a {
@@ -273,7 +265,6 @@ section {
     background: #ccc;
     margin-top: 24px;
     margin-bottom: 16px;
-
 }
 
 .content-explane {
@@ -294,6 +285,10 @@ section {
     background: #eee;
 }
 
+.help-more {
+    padding-bottom: 18px;
+}
+
 /* section-first end -------------------------------------------------------------------------------------------------------------------------------------- */
 /* section-second start -------------------------------------------------------------------------------------------------------------------------------------- */
 
@@ -312,10 +307,170 @@ section {
 
 
 
+
+
 /* section-second end -------------------------------------------------------------------------------------------------------------------------------------- */
 /* footer start -------------------------------------------------------------------------------------------------------------------------------------- */
 
+footer {
+    width: 100%;
+    background: #121315;
+}
+
+.footer-container {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
+.footer-more {
+    text-align: center;
+    padding: 48px;
+    
+}
+
+.footer-more > button {
+    background: #3ba55c;
+    border: none;
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;    
+}
+/* button: inline-block 속성 */
+
+.footer-devices {
+    position: relative;
+    width: 1000px;
+    border-bottom: 1px solid #353535;
+    
+}
+
+.footer-devices > img {
+    height: 150px;
+    width: auto;
+    margin: 0 auto;
+}
+
+.icons {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+
+.icons img {
+    width: auto;
+    height: 56px;
+    opacity: 0.5;
+    transition: 0.2s;
+    top: 72px;
+    position: absolute;
+}
+
+.icons img:hover {    
+    opacity: 1;
+}
+
+.icon-browsers {
+    left: 
+    
+
+}
+
+.icon-android {
+    left: ;
+    
+}
+
+.icon-apple {
+    left: ;
+    
+}
+
+.icon-window {
+    left: ;
+    
+    
+}
+
+.icon-mac {
+    left: 622px;
+}
+
+footer {
+    overflow: hidden;
+}
+
+.footer-nav-container {
+    display: flex;
+    gap: 200px;
+    padding: 32px 32px;
+    padding-bottom: 48px;
+}
+
+.footer-logo-container {
+    width: 150px;
+    flex-shrink: 0;
+    /* shrink: 1. 줄다 2. 감소하다 3. 축소되다 4. 위축되다 5. 수축 */
+}
+
+.footer-nav {
+    display: flex;
+    width: 100%;
+}
+
+.footer-nav > ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-nav a:hover {    
+    text-decoration: underline;
+}
+
 /* footer end -------------------------------------------------------------------------------------------------------------------------------------- */
+/* help start -------------------------------------------------------------------------------------------------------------------------------------- */
+
+#help {
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    padding: 0;
+}
+
+#help > button {
+    background: var(--main-color);
+    border: none;
+    width: 120px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+/* help end -------------------------------------------------------------------------------------------------------------------------------------- */
 /* animation start -------------------------------------------------------------------------------------------------------------------------------------- */
 
 @media screen and (max-width: 799px) {
